@@ -1,0 +1,127 @@
+languageCode: en-us
+title: Ash Gupta
+theme: PaperMod
+paginate: 10
+
+# Navigation
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 20
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 40
+
+# Configurations
+params:
+  title: Ash Gupta
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "A snapshot of my thoughts in time."
+  keywords: [Blog, Portfolio, Experience]
+  author: Ash Gupta
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  mainSections: [projects, blog]
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  disableSpecial1stPost: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hello stranger, my name is Ash \U0001F44B"
+    Content: >
+      - 🚀 I started my journey developing medical devices for New Zealand's largest company - [**Fisher & Paykel Healthcare**](https://www.fphcare.com/nz/). I helped develop embedded software and algorithm for home respiratory machines that have treated *100k patients and counting*. 
+      
+      - Now exploring the ins-and-outs of startups at [**Umps**](www.umps.com), just over the ditch in Melbourne, Australia. My next assignment is to make care at home seamless by designing a smart-home IOT platform to enable independent living for elderly people 🏠.
+
+      -
+
+      - I am driven by my passion to use my engineering skills for good and continue making a difference in people's lives across the globe 🌏.
+
+      -
+      
+      - 💡 Step into my digital realm! This website is a snapshot of my evolving journey, revealing projects, ideas, and the rich tapestry of interests that define my exploration in the world of technology and beyond.
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ash-gupta/"
+    - name: github
+      url: "https://github.com/ash-gupta"
+    - name: cv
+      url: "https://onedrive.live.com/?authkey=%21AEO%5FK%5FF9u6mINKc&id=4E4C80A6062B3747%21115274&cid=4E4C80A6062B3747&parId=root&parQt=sharedby&parCid=UnAuth&o=OneUp"
+    - name: email
+      url: "mailto:iam.ash@hotmail.com"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
