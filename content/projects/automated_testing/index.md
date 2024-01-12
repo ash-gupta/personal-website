@@ -34,19 +34,19 @@ Upon initiating the software, it undergoes an initialization phase, dynamically 
 
 #### Control Panel
 Configure the device under test and set parameters.
-![Control Panel](assets/images/automated_testing_control_panel.jpg)
+![Control Panel](images/automated_testing_control_panel.jpg)
 
 #### Equipment Control Panel
 Dynamic loading based on available drivers, acting as a consolidated electronic control panel - to control the devices remotely.
-![Equipment Control Panel](/images/automated_testing_equipment_control_panel.jpg)
+![Equipment Control Panel](images/automated_testing_equipment_control_panel.jpg)
 
 #### Bench Testing
 Enables engineers to run pre-compiled test cases in the background with minimal intervention. This is used by the team during the V&V stage to verify that the product meets regulatory standards.
-![Bench Testing](/assets/images/automated_testing_benchtest.jpg)
+![Bench Testing](images/automated_testing_benchtest.jpg)
 
 #### Loop Script
 Allows engineers to create automated test scenarios without coding, using a drag-and-drop interface.
-![Loop Script](../../assets/images/automated_testing_loop_script_panel.jpg)
+![Loop Script](images/automated_testing_loop_script_panel.jpg)
 
 ## Impact:
 

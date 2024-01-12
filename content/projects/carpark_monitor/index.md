@@ -5,10 +5,10 @@ dateString: January 2020
 draft: false
 tags: ["Python", "Project", "Automation"]
 cover:
-    image: "/projects/assets/carpark_cover.png"
+    image: "images/carpark_cover.png"
 ---
 
-> [Read the Final Published Paper](/projects/assets/carpark_paper.pdf)
+> [Read the Final Published Paper](assets/carpark_paper.pdf)
 
 ## The Problem
 
@@ -28,7 +28,7 @@ Implement a high-mounted camera system with computer vision algorithms and deep 
 5. Non-Zero Pixels
 6. YOLO Neural Network
 
-![Steps](/projects/assets/carpark_process.png)
+![Steps](images/carpark_process.png)
 
 ## Results
 
