@@ -26,7 +26,7 @@ We designed a flatpack version of the rubbish bins using SolidWorks and utilized
 
 Considering the students' age, we prioritized safety and ease of assembly. Thus, we opted for a soft plastic like polypropylene and used screws instead of glue for assembly. We then took the flat packs to the school and worked with the students to put them together.
 
-![Image 1](images/rocket_bins/rocketbins_1.png)
+![Image 1](images/rocketbins_1.png)
 
 | | | |
 |--|--|--|
