@@ -5,7 +5,7 @@ dateString: November 2018
 draft: false
 tags: ["Python", "Project", "Automation"]
 cover:
-    image: "/projects/assets/automated_testing_cover.jpg"
+    image: "images/automated_testing_cover.jpg"
 ---
 
 During my third year of study, I interned at MimoMax Wireless, a Christchurch-based company specializing in the design and manufacturing of Multiple Input Multiple Output Radios.
@@ -34,19 +34,19 @@ Upon initiating the software, it undergoes an initialization phase, dynamically 
 
 #### Control Panel
 Configure the device under test and set parameters.
-![Control Panel](/projects/assets/automated_testing_control_panel.jpg)
+![Control Panel](images/automated_testing_control_panel.jpg)
 
 #### Equipment Control Panel
 Dynamic loading based on available drivers, acting as a consolidated electronic control panel - to control the devices remotely.
-![Equipment Control Panel](/projects/assets/automated_testing_equipment_control_panel.jpg)
+![Equipment Control Panel](images/automated_testing_equipment_control_panel.jpg)
 
 #### Bench Testing
 Enables engineers to run pre-compiled test cases in the background with minimal intervention. This is used by the team during the V&V stage to verify that the product meets regulatory standards.
-![Bench Testing](/projects/assets/automated_testing_benchtest.jpg)
+![Bench Testing](images/automated_testing_benchtest.jpg)
 
 #### Loop Script
 Allows engineers to create automated test scenarios without coding, using a drag-and-drop interface.
-![Loop Script](/projects/assets/automated_testing_loop_script_panel.jpg)
+![Loop Script](images/automated_testing_loop_script_panel.jpg)
 
 ## Impact:
 

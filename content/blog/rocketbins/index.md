@@ -5,7 +5,7 @@ dateString: June 2021
 draft: false
 tags: ["Volunteer", "Blog", "Giving Back"]
 cover:
-    image: "/blog/assets/rocketbins_cover.png"
+    image: "images/rocketbins_cover.png"
 ---
 
 SouthSci is a New Zealand government program that connects schools in low socio-economic areas of South Auckland with science, providing both funding and expertise for community research projects. The goal is to demonstrate the value of science, showcase career paths in the science sector, and foster relationships between science organizations, researchers, and students.
@@ -26,9 +26,11 @@ We designed a flatpack version of the rubbish bins using SolidWorks and utilized
 
 Considering the students' age, we prioritized safety and ease of assembly. Thus, we opted for a soft plastic like polypropylene and used screws instead of glue for assembly. We then took the flat packs to the school and worked with the students to put them together.
 
+![Image 1](images/rocketbins_1.png)
+
 | | | |
 |--|--|--|
-| ![Image 1](/blog/assets/rocketbins_1.png) | ![Image 2](/blog/assets/rocketbins_2.png) | ![Image 3](/blog/assets/rocketbins_3.png) |
+| ![Image 1](images/rocketbins_1.png) | ![Image 2](images/rocketbins_2.png) | ![Image 3](images/rocketbins_3.png) |
 
 And it was a success—they loved it!
 
