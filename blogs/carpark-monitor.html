@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer-vision car park monitor — Ash Gupta</title>
+<meta name="description" content="A hybrid computer vision pipeline using background subtraction and YOLO to detect parking occupancy at 91% accuracy.">
+<link rel="canonical" href="https://ashgupta.dev/blogs/carpark-monitor.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<div class="bg-canvas" aria-hidden="true"></div>
+
+<header>
+  <nav>
+    <a href="../index.html" class="brand">
+      <span class="brand-dot"></span>
+      ashgupta.dev
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#blog">All posts</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<article class="article-wrap">
+  <a class="blog-back" href="../index.html#blog">← Back to blog</a>
+
+  <div class="article-kicker">Computer vision · Research · January 2020</div>
+  <h1>Computer-vision car park monitor</h1>
+  <p class="article-lead">An automated computer-vision tool for monitoring car park occupancy efficiently — combining classical image processing with a YOLO neural network to reach 91% accuracy.</p>
+
+  <div class="article-hero">
+    <img src="../images/blogs/carpark-monitor/carpark_cover.png" alt="Computer vision car park monitoring system cover">
+  </div>
+
+  <div class="article-body">
+    <blockquote>
+      <a href="../images/blogs/carpark-monitor/carpark_paper.pdf" target="_blank" rel="noopener">Read the final published paper →</a>
+    </blockquote>
+
+    <h2>The problem</h2>
+    <ul>
+      <li>Prolonged parking overstays result in revenue loss for the parking company.</li>
+      <li>The current manual method of detecting parking occupancy is inefficient and requires parking officers.</li>
+    </ul>
+
+    <h2>Solution</h2>
+    <p>Implement a high-mounted camera system with computer vision algorithms and deep learning to validate parking spot occupancy.</p>
+
+    <h3>Key steps</h3>
+    <ol>
+      <li>Grey scaling and Gaussian blur</li>
+      <li>Background subtraction</li>
+      <li>Thresholding</li>
+      <li>Dilation</li>
+      <li>Non-zero pixels</li>
+      <li>YOLO neural network</li>
+    </ol>
+
+    <figure class="article-img">
+      <img src="../images/blogs/carpark-monitor/carpark_process.png" alt="Stages of the car park computer vision pipeline: assigning parking spots, background subtraction, thresholding, and final detection output">
+    </figure>
+
+    <h2>Results</h2>
+    <div class="article-table-wrap">
+      <table class="article-table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Accuracy</th>
+            <th>Explanation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Background subtraction only</td>
+            <td>50%</td>
+            <td>Detected every small movement</td>
+          </tr>
+          <tr>
+            <td>Background subtraction + thresholding</td>
+            <td>72%</td>
+            <td>Filtered out small movements</td>
+          </tr>
+          <tr>
+            <td>Background subtraction + Gaussian blur + thresholding + dilation</td>
+            <td>84%</td>
+            <td>Reduced noise from the image; still detected humans and other non-vehicle related movements</td>
+          </tr>
+          <tr>
+            <td>Addition of YOLO neural network</td>
+            <td><strong>91%</strong></td>
+            <td>Eliminated non-vehicle related movement</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The final achieved accuracy was 91%, surpassing previous research on this application (<a href="https://ieeexplore.ieee.org/document/8221062" target="_blank" rel="noopener">IEEE reference</a>).</p>
+
+    <h2>Future work</h2>
+    <ul>
+      <li>Further train YOLO to improve accuracy in classifying detected movements.</li>
+      <li>Implement multiple cameras to capture images from different angles, preventing small cars from being hidden by larger neighbouring cars.</li>
+      <li>Develop a web app for parking companies to automate monitoring of their parking spots.</li>
+    </ul>
+  </div>
+
+  <nav class="article-nav">
+    <span></span>
+    <a class="next" href="automated-testing.html">Automated testing software →</a>
+  </nav>
+</article>
+
+<footer>
+  <a href="../index.html">Ash Gupta</a> · ashgupta.dev
+</footer>
+
+</body>
+</html>

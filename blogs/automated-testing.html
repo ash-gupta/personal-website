@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automated testing software for RF radios — Ash Gupta</title>
+<meta name="description" content="A Python/PyQt drag-and-drop test automation tool built at Mimomax that cut manual RF testing time by 98%.">
+<link rel="canonical" href="https://ashgupta.dev/blogs/automated-testing.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<div class="bg-canvas" aria-hidden="true"></div>
+
+<header>
+  <nav>
+    <a href="../index.html" class="brand">
+      <span class="brand-dot"></span>
+      ashgupta.dev
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#blog">All posts</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<article class="article-wrap">
+  <a class="blog-back" href="../index.html#blog">← Back to blog</a>
+
+  <div class="article-kicker">Test automation · Internship · November 2018</div>
+  <h1>Automated testing software for RF radios</h1>
+  <p class="article-lead">A Python-based tool to streamline RF device testing, automating tasks and reducing manual effort — built during my internship at Mimomax Wireless.</p>
+
+  <div class="article-hero">
+    <img src="../images/blogs/automated-testing/automated_testing_cover.jpg" alt="Automated testing software for RF radios">
+  </div>
+
+  <div class="article-body">
+    <p>During my third year of study, I interned at Mimomax Wireless, a Christchurch-based company specialising in the design and manufacturing of Multiple Input Multiple Output Radios.</p>
+    <p>My assignment was to design and develop an automated testing software, simplifying the labour-intensive process of testing new radios.</p>
+
+    <h2>Project requirements</h2>
+    <ol>
+      <li><strong>User-friendly GUI</strong> — intuitive interface for ease of use.</li>
+      <li><strong>Scalable architecture</strong> — ability to accommodate new developments seamlessly.</li>
+      <li><strong>VISA interface compatibility</strong> — integration with VISA for enhanced flexibility.</li>
+    </ol>
+    <p>The software was entirely crafted in Python, using PyQt for the GUI and VISA for test equipment drivers. Given my initial unfamiliarity with both, there was a steep learning curve — but it paid off.</p>
+
+    <h2>Functionality overview</h2>
+    <p>Upon initiating the software, it undergoes an initialization phase, dynamically discovering available drivers and configuring the GUI accordingly.</p>
+
+    <h3>Three user modes</h3>
+    <ol>
+      <li><strong>Equipment control panel</strong> — digital control to send commands via the VISA interface.</li>
+      <li><strong>Bench testing</strong> — running compliance test scripts with user-entered parameters.</li>
+      <li><strong>Loop script</strong> — creating and executing custom test scripts through a drag-and-drop interface.</li>
+    </ol>
+
+    <h2>Visuals</h2>
+
+    <h3>Control panel</h3>
+    <p>Configure the device under test and set parameters.</p>
+    <figure class="article-img">
+      <img src="../images/blogs/automated-testing/automated_testing_control_panel.jpg" alt="Control panel for configuring the device under test">
+    </figure>
+
+    <h3>Equipment control panel</h3>
+    <p>Dynamic loading based on available drivers, acting as a consolidated electronic control panel to remotely control devices.</p>
+    <figure class="article-img">
+      <img src="../images/blogs/automated-testing/automated_testing_equipment_control_panel.jpg" alt="Equipment control panel with dynamic driver loading">
+    </figure>
+
+    <h3>Bench testing</h3>
+    <p>Enables engineers to run pre-compiled test cases in the background with minimal intervention. Used by the team during the V&amp;V stage to verify that the product meets regulatory standards.</p>
+    <figure class="article-img">
+      <img src="../images/blogs/automated-testing/automated_testing_benchtest.jpg" alt="Bench testing mode for running compliance test scripts">
+    </figure>
+
+    <h3>Loop script</h3>
+    <p>Allows engineers to create automated test scenarios without coding, using a drag-and-drop interface.</p>
+    <figure class="article-img">
+      <img src="../images/blogs/automated-testing/automated_testing_loop_script_panel.jpg" alt="Loop script drag-and-drop test builder">
+    </figure>
+
+    <h2>Impact</h2>
+    <p>The software drastically reduces human time by <strong>98%</strong>, enabling more productive utilisation rather than mundane testing.</p>
+    <p>Remarkably, this tool is still in use today — years later — by the Mimomax team.</p>
+  </div>
+
+  <nav class="article-nav">
+    <a href="carpark-monitor.html">← Car park monitor</a>
+    <a class="next" href="lasercut-map.html">Laser-cut map →</a>
+  </nav>
+</article>
+
+<footer>
+  <a href="../index.html">Ash Gupta</a> · ashgupta.dev
+</footer>
+
+</body>
+</html>
